@@ -21,9 +21,9 @@
         <h1 class="test">Weather Dashboard</h1>
     </header>
 
-    <div class="d-flex row justify-content-around custom-wrapper">
+    <div class="d-flex flex-row custom-wrapper">
         <div class="d-flex row col-md-3 justify-content-center custom-form">
-            <form>
+            <form id="search-form">
                 <div class="form-row">
                     <h2>Search for a City</h2>
                 </div>
@@ -38,12 +38,64 @@
             </div>
         </div>
 
-        <div class="jumbotron col-md-8">
-            <h3 class="city-name custom-dash-title">city and date</h3>
-            <p id="temp"></p>
-            <p id="wind"></p>
-            <p id="humidity"></p>
-            <p id="uv-index"></p>
+        <div class="d-flex flex-column col-md-9">
+            <div class="mb-3 current-weather">
+                <h3 class="city-name custom-dash-title"></h3>
+                <p id="temp"></p>
+                <p id="wind"></p>
+                <p id="humidity"></p>
+                <p id="uv-index"></p>
+            </div>
+
+            <h3>5-Day Forecast:</h3>
+
+            <div class="d-flex flex-row justify-content-between">
+                <div class="card col-md-2" >
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+                <div class="card col-md-2" >
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+                <div class="card col-md-2" >
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+                <div class="card col-md-2" >
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+                <div class="card col-md-2">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     

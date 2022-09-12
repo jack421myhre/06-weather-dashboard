@@ -9,3 +9,7 @@ body {
 .custom-banner {
     text-align: center;
 }
+
+.current-weather {
+    border: 1px solid red;
+}
