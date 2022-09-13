@@ -18,7 +18,7 @@
 </head>
 <body>
     <header class="mb-3 custom-banner">
-        <h1 class="test">Weather Dashboard</h1>
+        <h1>Weather Dashboard</h1>
     </header>
 
     <div class="d-flex flex-row custom-wrapper">
@@ -28,7 +28,7 @@
                     <h2>Search for a City</h2>
                 </div>
                 <div class="mb-3">
-                    <input type="text" id="validationDefault03" placeholder="New York" id="search-box" required>
+                    <input class='form-control' type="text" placeholder="New York" id="search-box" required>
                 </div>
                 <button class="btn btn-primary custom-btn " type="submit">Search</button>
             </form>
@@ -44,55 +44,54 @@
                 <p id="temp"></p>
                 <p id="wind"></p>
                 <p id="humidity"></p>
-                <p id="uv-index"></p>
             </div>
 
-            <h3>5-Day Forecast:</h3>
+            <h3 class="hidden forecast">5-Day Forecast:</h3>
 
-            <div class="d-flex flex-row justify-content-between">
-                <div class="card col-md-2" >
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
+            <div class="d-flex flex-row flex-wrap justify-content-between hidden forecastCards">
+                <div class="card col-md-2 col-sm-6"  >
+                    <div class="card-body" id="day-0">
+                        <h5 class="card-title"></h5>
+                        <p class="tempCard"></p>
+                        <p class="windCard"></p>
+                        <p class="humidCard"></p>
+                      
                     </div>
                 </div>
-                <div class="card col-md-2" >
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
+                <div class="card col-md-2 col-sm-6"  >
+                    <div class="card-body" id="day-1">
+                      <h5 class="card-title"></h5>
+                      <p class="tempCard"></p>
+                      <p class="windCard"></p>
+                      <p class="humidCard"></p>
+                      
                     </div>
                 </div>
-                <div class="card col-md-2" >
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
+                <div class="card col-md-2 col-sm-6"  >
+                    <div class="card-body" id="day-2">
+                      <h5 class="card-title"></h5>
+                      <p class="tempCard"></p>
+                      <p class="windCard"></p>
+                      <p class="humidCard"></p>
+                      
                     </div>
                 </div>
-                <div class="card col-md-2" >
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
+                <div class="card col-md-2 col-sm-6"  >
+                    <div class="card-body" id="day-3">
+                      <h5 class="card-title"></h5>
+                      <p class="tempCard"></p>
+                      <p class="windCard"></p>
+                      <p class="humidCard"></p>
+                      
                     </div>
                 </div>
-                <div class="card col-md-2">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
+                <div class="card col-md-2 col-sm-6" >
+                    <div class="card-body" id="day-4">
+                      <h5 class="card-title"></h5>
+                      <p class="tempCard"></p>
+                      <p class="windCard"></p>
+                      <p class="humidCard"></p>
+                      
                     </div>
                 </div>
             </div>
@@ -102,8 +101,6 @@
     
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <!-- jQuery UI -->
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

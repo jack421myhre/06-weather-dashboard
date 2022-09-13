@@ -8,8 +8,19 @@ body {
 
 .custom-banner {
     text-align: center;
+    background-color: #00b4d8;
+    color: white;
 }
 
 .current-weather {
-    border: 1px solid red;
+    border: 1px solid #777;
+    padding: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    font-size: 14px;
 }
